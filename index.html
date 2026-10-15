@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#075e63" />
+  <meta name="description" content="লাহজিওর সাথে সহজে শিখুন সৌদি আরবের দৈনন্দিন আরবি। বাংলা ভাষায় আরবি শেখার নতুন অভিজ্ঞতা আসছে খুব শীঘ্রই।" />
+
+  <title>Lahjio — সৌদি আরবি শিখুন বাংলায়</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Bangla and English fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lahjio: {
+              teal: "#075E63",
+              green: "#0D9488",
+              gold: "#E9A23B",
+              cream: "#FAF9F5",
+              ink: "#153C3D"
+            }
+          },
+          fontFamily: {
+            bangla: ["Hind Siliguri", "sans-serif"],
+            english: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: "Hind Siliguri", sans-serif; }
+    .gradient-text {
+      background: linear-gradient(100deg, #075E63, #0D9488);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero-glow {
+      background:
+        radial-gradient(circle at 80% 20%, rgba(233,162,59,.17), transparent 30%),
+        radial-gradient(circle at 20% 70%, rgba(13,148,136,.12), transparent 35%);
+    }
+    .arabic { font-family: serif; direction: rtl; }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- Announcement -->
+  <div class="bg-lahjio-teal px-4 py-2 text-center text-sm text-white">
+    <span class="mr-1 inline-block h-2 w-2 rounded-full bg-lahjio-gold"></span>
+    লাহজিও আসছে খুব শীঘ্রই — সঙ্গে থাকুন!
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+
+      <a href="#" class="font-english text-3xl font-extrabold tracking-tight" aria-label="Lahjio home">
+        <span class="text-lahjio-teal">Lahj</span><span class="text-lahjio-green">i</span><span class="text-lahjio-gold">o</span>
+      </a>
+
+      <div class="hidden items-center gap-8 text-base font-medium md:flex">
+        <a href="#features" class="transition hover:text-lahjio-green">কেন লাহজিও?</a>
+        <a href="#lessons" class="transition hover:text-lahjio-green">কী শিখবেন?</a>
+        <a href="#about" class="transition hover:text-lahjio-green">আমাদের সম্পর্কে</a>
+      </div>
+
+      <a href="#coming-soon"
+         class="rounded-full bg-lahjio-teal px-5 py-2.5 font-semibold text-white transition hover:bg-lahjio-green">
+        শীঘ্রই আসছে
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero-glow relative overflow-hidden">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 md:grid-cols-2 md:py-28 lg:px-8">
+
+        <div class="relative z-10">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-teal-100 bg-white px-4 py-2 text-sm font-semibold text-lahjio-teal shadow-sm">
+            <span class="h-2 w-2 rounded-full bg-lahjio-gold"></span>
+            বাংলা ভাষাভাষীদের জন্য
+          </div>
+
+          <h1 class="mb-6 text-4xl font-bold leading-tight tracking-tight text-lahjio-ink sm:text-5xl lg:text-6xl">
+            সৌদি আরবি শিখুন,
+            <span class="gradient-text">নিজের ভাষায়।</span>
+          </h1>
+
+          <p class="mb-8 max-w-xl text-lg leading-9 text-slate-600 md:text-xl">
+            সৌদি আরবে কাজ, কেনাকাটা ও দৈনন্দিন জীবনে কথা বলার জন্য শিখুন প্রয়োজনীয় আরবি।
+            সহজ বাংলা ব্যাখ্যা, সঠিক উচ্চারণ ও বাস্তব কথোপকথনের মাধ্যমে।
+          </p>
+
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <a href="#lessons"
+               class="inline-flex items-center justify-center gap-2 rounded-xl bg-lahjio-teal px-7 py-4 text-lg font-semibold text-white shadow-lg shadow-teal-900/10 transition hover:-translate-y-0.5 hover:bg-lahjio-green">
+              কী শিখতে পারবেন?
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <a href="#coming-soon"
+               class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-7 py-4 text-lg font-semibold text-lahjio-teal transition hover:border-lahjio-green">
+              লঞ্চের খবর জানুন
+            </a>
+          </div>
+
+          <p class="mt-5 text-sm text-slate-500">
+            সহজ পাঠ · ব্যবহারিক আরবি · বাংলা ব্যাখ্যা
+          </p>
+        </div>
+
+        <!-- Sample phrase card -->
+        <div class="relative mx-auto w-full max-w-md">
+          <div class="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-teal-100 via-transparent to-amber-100 blur-2xl"></div>
+
+          <div class="relative rounded-3xl border border-white bg-white p-7 shadow-2xl shadow-teal-900/10 sm:p-9">
+            <div class="mb-7 flex items-center justify-between">
+              <div>
+                <p class="text-sm font-medium text-slate-500">আজকের নমুনা বাক্য</p>
+                <h2 class="mt-1 text-xl font-bold text-lahjio-ink">দৈনন্দিন সৌদি আরবি</h2>
+              </div>
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-50 text-2xl">
+                💬
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-lahjio-cream p-6 text-center">
+              <p class="mb-2 text-sm text-slate-500">আরবি</p>
+              <p class="arabic mb-4 text-4xl font-bold leading-relaxed text-lahjio-teal" lang="ar">
+                السلام عليكم
+              </p>
+              <div class="mx-auto mb-4 h-px w-16 bg-lahjio-gold"></div>
+              <p class="mb-1 text-sm text-slate-500">বাংলা উচ্চারণ</p>
+              <p class="mb-3 text-xl font-semibold text-lahjio-ink">আসসালামু আলাইকুম</p>
+              <p class="text-slate-600">অর্থ: আপনার ওপর শান্তি বর্ষিত হোক</p>
+            </div>
+
+            <div class="mt-6 flex items-center gap-3 rounded-xl border border-slate-100 p-4">
+              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-lahjio-teal text-xl text-white">
+                ✓
+              </div>
+              <div>
+                <p class="font-semibold text-lahjio-ink">সহজভাবে শিখুন</p>
+                <p class="text-sm text-slate-500">শুনুন, বুঝুন, অনুশীলন করুন।</p>
+              </div>
+            </div>
+
+            <div class="mt-5 flex justify-center">
+              <span class="rounded-full bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-800">
+                ✨ সম্পূর্ণ কোর্স আসছে শীঘ্রই
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Trust / value strip -->
+    <section class="border-y border-slate-100 bg-white">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-5 py-8 sm:grid-cols-3 lg:px-8">
+
+        <div class="flex items-center justify-center gap-3">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-50 text-xl">📖</span>
+          <div>
+            <p class="font-bold text-lahjio-ink">বাংলায় ব্যাখ্যা</p>
+            <p class="text-sm text-slate-500">সহজে বুঝতে পারবেন</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-50 text-xl">🎧</span>
+          <div>
+            <p class="font-bold text-lahjio-ink">আরবি উচ্চারণ</p>
+            <p class="text-sm text-slate-500">শুনে শুনে অনুশীলন</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-50 text-xl">🌍</span>
+          <div>
+            <p class="font-bold text-lahjio-ink">বাস্তব জীবনের পাঠ</p>
+            <p class="text-sm text-slate-500">কাজ ও দৈনন্দিন কথোপকথন</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="bg-lahjio-cream py-20 md:py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+        <div class="mx-auto mb-14 max-w-2xl text-center">
+          <p class="mb-3 font-semibold text-lahjio-green">কেন লাহজিও?</p>
+          <h2 class="mb-5 text-3xl font-bold text-lahjio-ink sm:text-4xl">
+            আরবি শেখা হোক সহজ ও বাস্তবসম্মত
+          </h2>
+          <p class="text-lg leading-8 text-slate-600">
+            নতুন দেশে ভাষা জানা মানে শুধু শব্দ শেখা নয়। মানুষের সঙ্গে কথা বলা,
+            নিজের প্রয়োজন বোঝানো এবং আত্মবিশ্বাস নিয়ে চলতে শেখা।
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+
+          <article class="rounded-2xl border border-slate-100 bg-white p-7 transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50 text-2xl">🗣️</div>
+            <h3 class="mb-3 text-xl font-bold text-lahjio-ink">কথা বলার আরবি</h3>
+            <p class="leading-8 text-slate-600">
+              শুধু বইয়ের ভাষা নয়—দৈনন্দিন জীবনে কাজে লাগে এমন কথোপকথন শেখার প্রস্তুতি নিন।
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-100 bg-white p-7 transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-50 text-2xl">💡</div>
+            <h3 class="mb-3 text-xl font-bold text-lahjio-ink">বাংলায় সহজ ব্যাখ্যা</h3>
+            <p class="leading-8 text-slate-600">
+              আরবি শব্দের অর্থ, বাংলা উচ্চারণ ও ব্যবহার একসঙ্গে বুঝে শেখার অভিজ্ঞতা।
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-100 bg-white p-7 transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50 text-2xl">⏱️</div>
+            <h3 class="mb-3 text-xl font-bold text-lahjio-ink">অল্প সময়ে অনুশীলন</h3>
+            <p class="leading-8 text-slate-600">
+              ছোট ছোট পাঠের মাধ্যমে নিজের সুবিধামতো সময়ে শেখার পরিকল্পনা করুন।
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Lessons -->
+    <section id="lessons" class="py-20 md:py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+
+        <div class="mx-auto mb-12 max-w-2xl text-center">
+          <p class="mb-3 font-semibold text-lahjio-green">আপনার শেখার যাত্রা</p>
+          <h2 class="mb-5 text-3xl font-bold text-lahjio-ink sm:text-4xl">
+            কোন কোন বিষয় শিখবেন?
+          </h2>
+          <p class="text-lg leading-8 text-slate-600">
+            সৌদি আরবে প্রতিদিনের প্রয়োজনীয় পরিস্থিতির জন্য ব্যবহারিক আরবি শেখার পরিকল্পনা।
+          </p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+          <div class="flex items-center gap-4 rounded-2xl border border-slate-100 p-5">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-2xl">👋</span>
+            <div>
+              <h3 class="font-bold text-lahjio-ink">অভিবাদন ও পরিচয়</h3>
+              <p class="text-sm text-slate-500">সালাম, পরিচিতি ও সাধারণ কথা</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 rounded-2xl border border-slate-100 p-5">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-50 text-2xl">🛒</span>
+            <div>
+              <h3 class="font-bold text-lahjio-ink">কেনাকাটা ও দাম</h3>
+              <p class="text-sm text-slate-500">দাম জিজ্ঞেস করা ও হিসাব</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 rounded-2xl border border-slate-100 p-5">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-2xl">🧰</span>
+            <div>
+              <h3 class="font-bold text-lahjio-ink">কর্মক্ষেত্রের আরবি</h3>
+              <p class="text-sm text-slate-500">নির্দেশনা, সময় ও সাহায্য</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 rounded-2xl border border-slate-100 p-5">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-50 text-2xl">🚕</span>
+            <div>
+              <h3 class="font-bold text-lahjio-ink">যাতায়াত ও দিকনির্দেশনা</h3>
+              <p class="text-sm text-slate-500">গন্তব্য ও রাস্তা চেনা</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 rounded-2xl border border-slate-100 p-5">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-2xl">🍽️</span>
+            <div>
+              <h3 class="font-bold text-lahjio-ink">খাবার ও রেস্তোরাঁ</h3>
+              <p class="text-sm text-slate-500">খাবার অর্ডার ও প্রয়োজন</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 rounded-2xl border border-slate-100 p-5">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-50 text-2xl">🏥</span>
+            <div>
+              <h3 class="font-bold text-lahjio-ink">স্বাস্থ্য ও জরুরি কথা</h3>
+              <p class="text-sm text-slate-500">সাহায্য চাওয়া ও উপসর্গ বোঝানো</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="mt-8 text-center text-sm text-slate-500">
+          এই বিষয়গুলো আসন্ন কোর্সের পরিকল্পনা—সব পাঠ এখনো প্রকাশিত হয়নি।
+        </p>
+      </div>
+    </section>
+
+    <!-- Coming soon -->
+    <section id="coming-soon" class="bg-lahjio-teal px-5 py-20 text-white md:py-24">
+      <div class="mx-auto max-w-3xl text-center">
+
+        <div class="mx-auto mb-7 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-3xl">
+          🚀
+        </div>
+
+        <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium">
+          <span class="h-2 w-2 rounded-full bg-lahjio-gold"></span>
+          Coming Soon · শীঘ্রই আসছে
+        </div>
+
+        <h2 class="mb-6 text-3xl font-bold leading-tight sm:text-5xl">
+          আপনার আরবি শেখার যাত্রা শুরু হোক লাহজিওর সঙ্গে
+        </h2>
+
+        <p class="mx-auto mb-9 max-w-2xl text-lg leading-8 text-teal-50">
+          আমরা তৈরি করছি বাংলা ভাষাভাষীদের জন্য সহজ ও ব্যবহারিক সৌদি আরবি শেখার একটি নতুন অভিজ্ঞতা।
+          লঞ্চের খবর পেতে আমাদের সঙ্গে থাকুন।
+        </p>
+
+        <a href="mailto:hello@lahjio.com?subject=Lahjio%20Launch%20Updates"
+           class="inline-flex items-center justify-center gap-2 rounded-xl bg-lahjio-gold px-8 py-4 text-lg font-bold text-lahjio-ink shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-300">
+          লঞ্চের খবর জানতে ইমেইল করুন
+          <span aria-hidden="true">→</span>
+        </a>
+
+        <p class="mt-5 text-sm text-teal-100">
+          এখনো চালু হয়নি · লঞ্চের তারিখ শিগগিরই জানানো হবে
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-lahjio-cream px-5 py-16">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="mb-4 text-2xl font-bold text-lahjio-ink">লাহজিও কেন?</h2>
+        <p class="text-lg leading-8 text-slate-600">
+          নতুন দেশে ভাষা শেখা যেন কঠিন মনে না হয়—এই ভাবনা থেকেই লাহজিওর যাত্রা।
+          আমাদের লক্ষ্য হলো বাংলা ভাষাভাষীদের দৈনন্দিন জীবনে সৌদি আরবি শেখা আরও সহজলভ্য করা।
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-100 bg-white">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-8 text-center sm:flex-row sm:text-left lg:px-8">
+
+      <a href="#" class="font-english text-2xl font-extrabold tracking-tight" aria-label="Lahjio home">
+        <span class="text-lahjio-teal">Lahj</span><span class="text-lahjio-green">i</span><span class="text-lahjio-gold">o</span>
+      </a>
+
+      <p class="text-sm text-slate-500">
+        সৌদি আরবি শিখুন, আত্মবিশ্বাসের সঙ্গে কথা বলুন।
+      </p>
+
+      <p class="text-sm text-slate-400">
+        © <span id="year"></span> Lahjio. সর্বস্বত্ব সংরক্ষিত।
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
